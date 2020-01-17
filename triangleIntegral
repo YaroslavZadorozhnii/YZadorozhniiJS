@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class triangle {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner (System.in);
+		System.out.println("Specify the length in meters of first side of the triangle.");
+		double a = scanner.nextDouble();
+		System.out.println("Specify the length in meters of second side of the triangle.");
+		double b = scanner.nextDouble();
+		System.out.println("Specify the length in meters of third side of the triangle.");
+		double c = scanner.nextDouble();
+		double p = ( a + b + c ) / 2;
+		double sum = Math.sqrt( p * ( p - a ) * ( p - b ) * ( p - c ));
+		System.out.println("The integral of the triangle is " + sum + " square meters." );
+		}
+
+}
