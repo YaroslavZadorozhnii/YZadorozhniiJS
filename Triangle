@@ -1,0 +1,15 @@
+public class Triangle {
+
+	public static void main(String[] args) {
+		double a = 5.51;
+		double b = 6.74;
+		double c = 17.31;
+		if (a+b>c) {
+			System.out.println("It is a triangle");
+		} else{System.out.println("This is not a triangle");
+		      }
+		
+
+	}
+
+}
