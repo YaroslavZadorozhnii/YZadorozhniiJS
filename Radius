@@ -1,0 +1,18 @@
+import java.util.*;
+public class Radius {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+	    double r = 4;
+	    System.out.println("Укажите положение точки x");
+	    double x = scanner.nextDouble();
+	    System.out.println("Укажите положение точки y");
+	    double y = scanner.nextDouble();
+	    double result = (y*y)+(x*x);
+	    if(r * r > result) {
+	    	System.out.println("Точки координат лежат внутри круга");
+	    }else {System.out.println("Точки координат лежат снаружи круга");}
+
+	}
+
+}
