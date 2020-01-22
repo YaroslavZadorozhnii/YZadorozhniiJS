@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Year {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Input some year number");
+		int year = scanner.nextInt();
+		if (year % 4 != 0 || year % 100 == 0 && year % 400 != 0) {
+		    System.out.println("This is a normal year");
+		    }else if(year == 0){System.out.println("Нулевой год был обычным :)");
+		    	} else{System.out.println("It is a Leap Year");
+		    		}
+	
+
+	}
+
+}
