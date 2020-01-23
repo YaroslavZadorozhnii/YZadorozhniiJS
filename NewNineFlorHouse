@@ -1,0 +1,25 @@
+	public static void main(String[] args) {
+		System.out.println("Введите номер квартиры");
+		Scanner scanner = new Scanner(System.in);
+		int x = scanner.nextInt();
+		if (x <= 0 ) {
+			System.out.println("Вы ввели некорректное значение");
+	    } else if (x <= 36 ) {
+			int f = x;
+			System.out.println("В первом подъезде на " + (f + 3)/4 +"-м етаже");	
+		} else if(x <= 72 ) {
+			int f = x - 36;
+			System.out.println("Во втором подъезде на " + (f + 3)/4 +"-м етаже");
+        } else if (x <= 108 ) {
+			int f = x - 72;
+			System.out.println("В третьем подъезде на " + (f + 3)/4 +"-м етаже");
+	    } else if (x <= 144 ) {
+			int f = x - 108;
+		    System.out.println("В четвертом подъезде на " + (f + 3)/4 +"-м етаже");
+	    } else {System.out.println("Такой квартиры нет в этом доме");
+	    
+	    }
+		
+	}
+
+}
